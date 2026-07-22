@@ -1,0 +1,4 @@
+@UDE_URL = https://strapi-store-server.onrender.com/api
+
+GET {{UDE_URL}}/products
+Accept: application/json
