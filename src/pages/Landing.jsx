@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero } from '../components'
+import { FeaturedProducts, Hero } from '../components'
 
 const url = "/products?featured=true"
 import { customFetch } from "../utils";
@@ -16,6 +16,7 @@ const Landing = () => {
   return (
     <>
       <Hero />
+      <FeaturedProducts />
     </>
   )
 }
