@@ -64,8 +64,27 @@ const SingleProduct = () => {
 
           </div>
           {/* AMOUNT */}
-
+          <div className="form-control w-full max-w-xs mt-6">
+            <label htmlFor="" className="label">
+              <h4 className="text-md font-medium tracking-wider capitalize">
+                amount
+              </h4>
+            </label>
+            <select name="" id="amount"
+              className='select mt-2 select-secondary select-bordered select-md' onChange={handleAmount}>
+                <option value={1}>1</option>
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+            </select>
+          </div>
           {/* CART BTN */}
+          <div className="mt-10">
+            <button className="btn btn-secondary btn-md"
+              onClick={()=>console.log("add to bag")}
+            >
+              Add to bag
+            </button>
+          </div>
         </div>
       </div>
     </section>
