@@ -2,6 +2,7 @@ import React from 'react'
 import { Form, Link, useLoaderData } from 'react-router-dom'
 import FormInput from './FormInput'
 import FormSelect from './FormSelect'
+import FormRange from './FormRange'
 
 
 const Filters = () => {
@@ -19,6 +20,8 @@ const Filters = () => {
       <FormSelect label="select company" name="company" list={meta.companies} size="select-sm" />
       {/* ORDER */}
       <FormSelect label="sort by" name="order" list={["a-z","z-a","high","low"]} size="select-sm" />
+      {/* PRICE */}
+      <FormRange name="price" label="select price" size="range-sm" />
       {/* BUTTONS */}
       <button type='submit' className='btn btn-primary btn-sm'>
         search
