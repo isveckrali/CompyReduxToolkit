@@ -6,7 +6,7 @@ const ErrorElement = () => {
     console.log(error)
   return (
     <div className='font-bold text-4xl'>
-        There was
+        There was a error
     </div>
   )
 }
