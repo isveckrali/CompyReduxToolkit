@@ -23,16 +23,16 @@ const SingleProduct = () => {
     setAmount(parseInt(e.target.value))
   }
 
-  const cartProduct = {
-    cartID:product.id + productColor,
-    productID:product.id,
-    image,
-    title,
-    price,
-    company,
-    productColor,
-    company,
-  }
+const cartProduct = {
+  cartID: product.id + productColor,
+  productID: product.id,
+  image,
+  title,
+  price: Number(price),
+  company,
+  productColor,
+  amount,
+}
 
   const dispatch = useDispatch()
 
