@@ -34,6 +34,7 @@ const cartProduct = {
   amount,
 }
 
+
   const dispatch = useDispatch()
 
   const addToCart = () => {
